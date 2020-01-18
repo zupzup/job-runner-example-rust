@@ -1,0 +1,18 @@
+[package]
+name = "job-runner-example-rust"
+version = "0.1.0"
+authors = ["Mario Zupan <mario@zupzup.org>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = "0.13"
+tokio = { version = "0.2", features = ["full"] }
+mobc-redis = "0.5"
+mobc-postgres = { version = "0.5", features = ["with-chrono-0_4"] }
+mobc = "0.5"
+futures = { version = "0.3", features = ["async-await"] }
+chrono = { version = "0.4", features = ["serde"] }
+fern = "0.5"
+log = "0.4"
